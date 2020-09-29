@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.element {
+  height: 100px;
+  width: 200px;
+  background: #e0e7de;
+  text-align: center;
+  color: #2d2d2d;
+  padding: 20px;
+  position: absolute;
+}
+
+.element span {
+  font-size: 24px;
+  line-height: 100px;
+}
+
+app-context-menu {
+    width: 100px;
+  background: #2d2d2d;
+  color: #fff;
+  padding: 15px;
+}
+
+
+
+
