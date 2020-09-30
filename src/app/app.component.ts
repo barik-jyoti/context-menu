@@ -1,4 +1,4 @@
-import { Component, HostListener, OnDestroy } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ContextMenuModel } from './Interfaces/context-menu-model';
 
 @Component({
@@ -6,7 +6,7 @@ import { ContextMenuModel } from './Interfaces/context-menu-model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent {
   title = 'context-menu';
 
   isDisplayContextMenu: boolean;
@@ -57,7 +57,4 @@ export class AppComponent implements OnDestroy {
     this.isDisplayContextMenu = false;
   }
 
-  ngOnDestroy() {
-    this.rightClickMenuItems = [];
-  }
 }
