@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="element" (contextmenu)="displayContextMenu($event); (false)">
+  <div class="element" (contextmenu)="displayContextMenu($event); false">
     <span>Right click on me!</span>
     <app-context-menu
       *ngIf="rightClickMenuItems.length > 0 && isDisplayContextMenu"
